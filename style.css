@@ -9,9 +9,17 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    margin: 0;
-    background-color: #2e333b;
+    margin-top: -1%;
+    background-color: #367fff;
     height: 10vh;
+}
+footer{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3%;
+    padding: 25px;
+    background-color: #367fff;
+    clear: both;
 }
 h1{
     font-size: 7rem;
@@ -26,12 +34,16 @@ h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
 }
+h3{
+    text-align: center;
+    font-size: 3rem;
+}
 a{
     color:white;
 }
 #menu ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 #menu ul li{
     display: inline-block;
@@ -53,8 +65,25 @@ a{
     background-color: black;
 }
 #landing{
+    transition: .7s;
     display: block;
     text-align: center;
+    height: 90vh;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#projects{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#contact{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .grid-container-1{
     display: grid;
@@ -68,6 +97,9 @@ a{
     position: absolute;
     top:0;
     left:0;
+}
+.item-2{
+    margin-top: 20%;
 }
 .item-3{
     border-bottom: 420px solid black;
@@ -86,6 +118,15 @@ a{
     bottom: 3%;
     font-size: 80px;
 }
+.text{
+    margin-top: 15%;
+    padding: 2rem;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: justify;
+    border: 4px dashed white;
+}
 @media screen and (max-width:740px) {
     #hamburger{
         display: flex;
@@ -96,6 +137,9 @@ a{
     }
     .item-1{
         display: none;
+    }
+    .item-2{
+        margin-top: 10%;
     }
     h1{
         font-size: 4rem;
@@ -108,8 +152,7 @@ a{
         word-wrap: normal;
     }
 }
-/*
-@media screen and (max-width:800px) and (min-width:501px) {
+/*@media screen and (max-width:800px) and (min-width:501px) {
     #menu ul{
         justify-content: center;
         text-align: center;
@@ -117,4 +160,4 @@ a{
     #menu ul li{
         white-space: nowrap;
     }
-}
+}*/
