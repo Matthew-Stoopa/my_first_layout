@@ -1,0 +1,120 @@
+body{
+    background-color: #2e333b;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:10px;
+    color: white;
+    margin: 0;
+}
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: #2e333b;
+    height: 10vh;
+}
+h1{
+    font-size: 7rem;
+    margin-bottom: -30px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+a{
+    color:white;
+}
+#menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    transition: .7s;
+}
+#menu ul li a:hover{
+    border-bottom: 1px solid white;
+}
+#hamburger{
+    display: none;
+}
+#hamburger ul li:hover{
+    background-color: black;
+}
+#landing{
+    display: block;
+    text-align: center;
+}
+.grid-container-1{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+.item-1{
+    border-top: 420px solid black;
+    border-right: 420px solid transparent;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.item-3{
+    border-bottom: 420px solid black;
+    border-left: 420px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 50%; 
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    font-size: 80px;
+}
+@media screen and (max-width:740px) {
+    #hamburger{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #menu{
+        display: none;
+    }
+    .item-1{
+        display: none;
+    }
+    h1{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        word-wrap: normal;
+    }
+}
+/*
+@media screen and (max-width:800px) and (min-width:501px) {
+    #menu ul{
+        justify-content: center;
+        text-align: center;
+    }
+    #menu ul li{
+        white-space: nowrap;
+    }
+}
