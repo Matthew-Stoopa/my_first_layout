@@ -15,63 +15,85 @@
     </head>
     <body>
         <container>
-        <nav>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">O mnie</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#"> Kontakt</a></li>
-                </ul>
+
+            <section> <!-- Strona startowa / Main page-->
+            <div id="start" class="grid-container-1">
+                <div class="box box-1">
+                <div class="background">
+                    <h1>Witaj na stronie!</h1>
+                    <h2>Mateusz Stopa - frontend developer</h2>
+                </div>
+                </div>
+                <div class="box box-2">
+                    <a href="#desktop">
+                    <div class="circle">
+                        <i class="fas fa-angle-double-down"></i>
+                    </div></a>
+                </div>
             </div>
+            </section>
+    
+            <nav id="hamburger"> <!-- menu dla urządzeń mobilnych / menu for mobile devices -->
+                <div id="hamburger"><i class="fas fa-bars"></i></div>   
+            </nav>
 
-            <div id="hamburger">
+            <nav id="desktop"> <!-- menu dla desptopów / menu for desktop -->
                 <ul>
-                    <li><a href="#">O mnie</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#about">O mnie <i class="fas fa-caret-left"></i></a></li>
+                    <li><a href="#projects">Projekty <i class="fas fa-caret-left"></i></a></li>
+                    <li><a href="#contact">Kontakt <i class="fas fa-caret-left"></i></a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <main>
-
-            <section id="landing">
-                <div class="grid-container-1">
-                    <div class="item-1">
+            <section> <!--O mnie / about me -->
+                <div id="about" class="grid-container-2">
+                    <div class="box box-3">
+                        <h3>O mnie</h3>
+                        <p>Cześć, mam na imię Mateusz. Mam 19 lat. Jestem uczniem czwartej klasy technikum na kierunku technik-informatyk.
+                            Pasję do tworzenia stron odkryłem stosunkowo niedawno, była to końcówka grudnia 2020r. podczas przygowowań do 
+                            egzaminu zawodowego EE.09.<br>
+                            Dotychczas nauczyłem się HTML5 oraz CSS, umiem również podstawy JavaScriptu oraz PHP, posługuję się Git'em na podstawoym poziomie.
+                            Jestem w trakcie dalszej nauki JS. 
+                            W najbliższej przyszłości planuję rozpocząć naukę Reacta oraz preprocesora SASS.
+                        </p>
                     </div>
+                </div>
+            </section>
 
-                    <div class="item-2">
-                            <h1>Witam na stronie!</h1>
-                            <h2>Mateusz Stopa - frontend developer</h2>
+            <section>   <!--Moje projekty / My pjojects -->
+                <div id="projects" class="grid-container-2">
+                    <div class="box box-3">
+                        <h3>Projekty</h3>
+                        <p>Poniżej przedstawiam moje dotychczasowe projekty, staram się je uzupełniać na bieżąco. 
+                            Zapraszam również do mojego profilu na Github'ie.
+                        </p>
+                        <div class="icons">
+                            <a href="#"><i class="far fa-folder"></i>Moja praca 1</a><br>
+                            <a href="#"><i class="far fa-folder"></i>Moja praca 2</a><br>
+                            <a href="#"><i class="far fa-folder"></i>Moja praca 3</a><br>
+                            <a href="#"><i class="far fa-folder"></i>Moja praca 4</a><br>
+                        </div>
+                        <p>Resztę moich prac znajdziesz na Github'ie..</p>
                     </div>
-                    <div class="item-3"></div>
-                    <div class=circle><i class="fas fa-angle-double-down"></i></div>
                 </div>
-            </section>
 
-            <section id="about"> 
-                <div class="text">
-                    <h3>O mnie</h3>  
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
-                </div>    
-            </section>
+                <section> <!--Kontakt / contact -->
+                    <div id="contact" class="grid-container-2">
+                        <div class="box box-3">
+                            <h3>Skontaktuj się ze mną:</h3>
+                            <div class="icons">
+                                <i class="fas fa-phone-alt"></i>+48 883 114 306<br>
+                                <i class="far fa-envelope"></i>oxyek12@gmail.com<br>
+                                <i class="fab fa-github"></i>Github<br>
+                                <i class="fab fa-facebook-messenger"></i>Messenger<br>
+                        </div>
+                    </div>
+                    </div>
+                </section>
 
-            <section id="projects">
-                <div class="text">
-                    <h3>Projekty</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>
-            </section>
-
-            <section id="contact">
-                <div class="text">
-                    <h3>Kontakt</h3>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>
-            </section>
-
-            <footer>Autor strony: Mateusz Stopa ©</footer>
-            </main>
-        </container>
+                <footer>
+                    <p>Autorem strony jest Mateusz Stopa &copy;</p>
+                </footer>
+        </container> 
     </body>
 </html>

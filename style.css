@@ -1,163 +1,209 @@
 body{
+    font-family: 'roboto condensed', sans-serif;
     background-color: #2e333b;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
     font-size:10px;
     color: white;
     margin: 0;
 }
-nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    margin-top: -1%;
-    background-color: #367fff;
-    height: 10vh;
-}
 footer{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 3%;
-    padding: 25px;
-    background-color: #367fff;
     clear: both;
+    width:100%;
+    background-color: #425f8a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 2px dashed white;
+    font-size: 1rem;
+    text-align: center;
 }
 h1{
-    font-size: 7rem;
-    margin-bottom: -30px;
-    font-weight: 100;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 5px;
+    font-size: 8em;
+    font-weight: 200;
+    line-height: 1rem;
+    word-wrap: break-word;
 }
 h2{
-    font-size: 2rem;
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
 }
 h3{
     text-align: center;
-    font-size: 3rem;
+    font-weight: 200;
+    font-size: 4rem;
+    font-family: 'oswald', sans-serif;
+}
+p{
+    font-weight: 200;
+    font-size: 1.75rem;
 }
 a{
-    color:white;
+    text-decoration: none;
+    color: white;
 }
-#menu ul{
+.icons {
+    font-size: 1.75rem;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons i{
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-bottom: 1.25rem;
+}
+.grid-container-1{      /* Kontener dla strony powitalnej / Container for landing page */
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(16,1fr);
+    background-image: url(background.jpg);
+    clip: rect(100px, 20px, 20px, 10px);
+}
+.box-1{ 
+    grid-column: 1/7;
+    grid-row: 5/9;
+    text-align: center;
+}
+.box-2{
+    grid-column: 3/span 1;
+    grid-row: 12/14;
     display: flex;
     justify-content: center;
 }
-#menu ul li{
-    display: inline-block;
-    list-style-type: none;
+.grid-container-2{      /* Kontener dla strony tekstowej / Container for text page */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+.box-3{
+    background-color: #425f8a;
+    grid-column: 3/7;
+    grid-row: 2/8;
+    border: 2px dashed white;
+    border-radius: 15px;
     padding: 20px;
 }
-#menu ul li a{
-    text-decoration: none;
-    font-size: 25px;
-    transition: .7s;
+.circle{
+    text-align: center;
+    width:150px;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 50%;
+    font-weight: 200;
+    font-size: 75px;
 }
-#menu ul li a:hover{
-    border-bottom: 1px solid white;
+.circle i{
+    margin-top: 30%;
+}
+#desktop{
+    position: sticky;
+    top:0;
+    margin: 0;
+    text-decoration: none;
+    background-color: #2e333b;
+}
+#desktop ul{
+    list-style-type: none;
+    text-align: center;
+}
+#desktop ul li{
+    display: inline-block ;
+    padding-right: 20px;
+}
+#desktop a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 3.5em;
+    padding-left:30px;
 }
 #hamburger{
     display: none;
 }
-#hamburger ul li:hover{
-    background-color: black;
-}
-#landing{
-    transition: .7s;
-    display: block;
-    text-align: center;
-    height: 90vh;
-}
-#about{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-#projects{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-#contact{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-.grid-container-1{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-}
-.item-1{
-    border-top: 420px solid black;
-    border-right: 420px solid transparent;
-    position: absolute;
-    top:0;
-    left:0;
-}
-.item-2{
-    margin-top: 20%;
-}
-.item-3{
-    border-bottom: 420px solid black;
-    border-left: 420px solid transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.circle{
-    width: 150px;
-    height: 150px;
-    border: 3px solid white;
-    border-radius: 50%; 
-    position: absolute;
-    right: 3%;
-    bottom: 3%;
-    font-size: 80px;
-}
-.text{
-    margin-top: 15%;
-    padding: 2rem;
-    width: 60%;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: justify;
-    border: 4px dashed white;
-}
-@media screen and (max-width:740px) {
-    #hamburger{
-        display: flex;
-        justify-content: flex-end;
+
+/*mobile*/
+@media only screen and (max-width: 550px){
+    .grid-container-1{
+        background-image: url(background_mobile.jpg);
     }
-    #menu{
-        display: none;
+    .box-2{
+        grid-column: 3/span 1;
+        grid-row: 9/11;
     }
-    .item-1{
-        display: none;
+    .circle{
+        width:100px;
+        height: 100px;
+        font-size: 50px;
     }
-    .item-2{
-        margin-top: 10%;
+    .box-3{
+        grid-column: 2/8;
+        grid-row: 2/8;
+    }
+    .icons {
+        font-size: 1.5rem;
+    }
+    .icons i{
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
     }
     h1{
-        font-size: 4rem;
-        margin-bottom: 0;
+        font-size: 4.25em;
     }
-    h2{
-        text-align: center;
+    h3{
+        font-size: 2rem;
     }
     p{
-        word-wrap: normal;
+        font-size: 1rem;
+    }
+    #hamburger{
+        display: block;
+    }
+    #hamburger i{
+        position: sticky;
+        top:0;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 2.6rem;
+        color:white;
+ 
+    }
+    #desktop{
+        display: none;
     }
 }
-/*@media screen and (max-width:800px) and (min-width:501px) {
-    #menu ul{
-        justify-content: center;
-        text-align: center;
+
+/* tablet/laptop/landscape_orientation */
+@media only screen and (max-width: 1200px) and (min-width: 551px){
+    .box-1{
+        grid-column: 1/7;
+        grid-row: 2/6;
     }
-    #menu ul li{
-        white-space: nowrap;
+    .box-2{
+        grid-column: 3/span 1;
+        grid-row: 10/12;
     }
-}*/
+    .grid-container-2{
+         height: 1200px; 
+    }
+    .box-3{
+        grid-column: 2/8;
+        grid-row: 2/7;
+    }
+    .icons {
+        font-size: 1.25rem;
+    }
+    .icons i{
+        font-size: 1.25rem;
+    }
+    h3{ 
+        margin-bottom: -1%; 
+    }
+    p{ 
+        font-size: 1.25rem; 
+    }
+}
